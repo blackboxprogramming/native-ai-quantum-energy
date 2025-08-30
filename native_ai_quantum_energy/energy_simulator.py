@@ -18,9 +18,11 @@ def solar_panel_output(power_watt: float, hours: float, efficiency: float = 0.15
     Parameters
     ----------
     power_watt : float
-        The nominal power rating of the panel in watts (W).
+        The nominal power rating of the panel in watts (W).  Must be
+        non‑negative.
     hours : float
-        Number of hours the panel operates under rated conditions.
+        Number of hours the panel operates under rated conditions.  Must be
+        non‑negative.
     efficiency : float, optional
         Conversion efficiency (0 ≤ efficiency ≤ 1).  Defaults to 0.15 (15 %).
 
@@ -36,6 +38,8 @@ def solar_panel_output(power_watt: float, hours: float, efficiency: float = 0.15
     factors.  This simplified function treats the rated power and efficiency
     as constants over the specified duration.
     """
+    if power_watt < 0 or hours < 0:
+        raise ValueError("Power and hours must be non-negative")
     if efficiency < 0 or efficiency > 1:
         raise ValueError("Efficiency must be between 0 and 1")
     # Convert hours to seconds to compute energy in joules
