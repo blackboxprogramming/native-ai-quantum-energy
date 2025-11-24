@@ -14,11 +14,13 @@ ten famous unsolved problems in mathematics:
 
 1. **Quantum Computing Simulation** – a minimal yet functional simulator for quantum
    circuits written in pure Python (found in `quantum_simulator.py`). The simulator
-   supports a small set of single-qubit gates (Hadamard and Pauli-X), a
-   two-qubit controlled-NOT (CNOT) gate and measurement. You can create
-   circuits, apply gates, and measure qubits to observe the probabilistic outcomes
-   expected from quantum mechanics. The code uses the vector–state model implemented
-   directly with Python lists and complex numbers, so it has no third-party dependencies.
+   supports a broad set of single-qubit gates (Hadamard, Pauli-X/Y/Z, S, T and
+   arbitrary rotations about the X/Y/Z axes), controlled operations such as CNOT
+   and controlled-Z, custom statevector initialisation and both full and partial
+   measurement. You can create circuits, apply gates, and measure qubits to observe
+   the probabilistic outcomes expected from quantum mechanics. The code uses the
+   vector–state model implemented directly with Python lists and complex numbers,
+   so it has no third-party dependencies.
 
 2. **Energy and Particle Simulation** – a simple set of utilities (in
    `energy_simulator.py`) that model energy generation and consumption as well as
@@ -59,19 +61,22 @@ You can run the modules directly or import the functions into your own scripts.
 For example, to create a simple quantum circuit:
 
 ```python
+import math
 from native_ai_quantum_energy.quantum_simulator import QuantumCircuit
 
 # Create a two-qubit circuit
 qc = QuantumCircuit(2)
 
-# Put the first qubit into superposition and entangle with the second qubit
+# Put the first qubit into superposition, rotate the second qubit and entangle them
 qc.apply_hadamard(0)
-qc.apply_cnot(0, 1)
+qc.apply_ry(1, math.pi / 4)
+qc.apply_cz(0, 1)
 
-# Measure both qubits
-qc.measure_all()
+# Measure only the control qubit while leaving the target unmeasured
+subset_result = qc.measure_subset([0])
 
-print("Measurement results:", qc.measurements)
+print("Measured control qubit:", subset_result)
+print("Statevector after measurement:", qc.statevector())
 ```
 
 Similarly, to simulate energy production:
