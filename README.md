@@ -1,3 +1,10 @@
+> ⚗️ **Research Repository**
+>
+> This is an experimental/research repository. Code here is exploratory and not production-ready.
+> For production systems, see [BlackRoad-OS](https://github.com/BlackRoad-OS).
+
+---
+
 # Native AI Quantum Energy Lab
 
 **Native AI Quantum Energy Lab** is an experimental educational project that combines a simple
