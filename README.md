@@ -3,6 +3,21 @@
 > This is an experimental/research repository. Code here is exploratory and not production-ready.
 > For production systems, see [BlackRoad-OS](https://github.com/BlackRoad-OS).
 
+> 🌟 **BlackRoad Ecosystem Integration**
+>
+> This repository is fully integrated with the BlackRoad Ecosystem including Traffic Light System, 
+> BlackRoad Codex, and 12 AI Agents. See [ECOSYSTEM.md](ECOSYSTEM.md) for complete details.
+
+## 🚦 Traffic Light Status
+
+**Current Status:** 🟢 **GREENLIGHT** - Ready for development and collaboration
+
+- 🟢 **[GREENLIGHT](GREENLIGHT.md)** - Ready / Safe to proceed
+- 🟡 **[YELLOWLIGHT](YELLOWLIGHT.md)** - Caution / Review needed
+- 🔴 **[REDLIGHT](REDLIGHT.md)** - Stop / Critical issues
+
+Check status: `./blackroad-traffic-light.sh status`
+
 ---
 
 # Native AI Quantum Energy Lab
@@ -112,6 +127,93 @@ pytest
 ```
 
 All tests should pass without requiring any additional configuration.
+
+## BlackRoad Ecosystem Integration
+
+### 🚦 Traffic Light System
+
+This repository uses the **BlackRoad Traffic Light System** for status tracking and workflow management:
+
+- **🟢 GreenLight** - All systems operational, safe to proceed
+- **🟡 YellowLight** - Caution required, some issues need attention
+- **🔴 RedLight** - Critical issues, stop all non-emergency work
+
+**Usage:**
+```bash
+# Initialize traffic light system
+./blackroad-traffic-light.sh init
+
+# Check current status
+./blackroad-traffic-light.sh status
+
+# Run automated checks
+./blackroad-traffic-light.sh check
+
+# Set status manually
+./blackroad-traffic-light.sh set green "All tests passing"
+./blackroad-traffic-light.sh set yellow "Minor issues found"
+./blackroad-traffic-light.sh set red "Critical bug detected"
+
+# View history
+./blackroad-traffic-light.sh history
+
+# Generate report
+./blackroad-traffic-light.sh report
+```
+
+See [GREENLIGHT.md](GREENLIGHT.md), [YELLOWLIGHT.md](YELLOWLIGHT.md), and [REDLIGHT.md](REDLIGHT.md) for detailed status documentation.
+
+### 📚 BlackRoad Codex Integration
+
+This repository is integrated with the **BlackRoad Codex** - the universal code intelligence system for the BlackRoad ecosystem:
+
+- 🔍 **Semantic code search** across all BlackRoad repositories
+- 🔬 **Formal verification** of quantum and energy algorithms
+- 📊 **Cross-repository analysis** for pattern discovery
+- 🧠 **Knowledge graph** integration for code relationships
+
+See [BLACKROAD-CODEX.md](BLACKROAD-CODEX.md) for complete integration details.
+
+### 🤖 AI Agent Collaboration
+
+This repository supports collaboration with BlackRoad AI agents:
+
+- **Cora** - Code Review Agent
+- **Alice** - Migration Architect
+- **Lucidia** - Documentation Expert
+- **Caddy** - CI/CD Orchestrator
+- **Cece** - Code Quality Guardian
+- **Aria** - Architecture Advisor
+- **Silas** - Security Sentinel
+- **Gaia** - Infrastructure Manager
+- **Tosha** - Test Automation Expert
+- **Roadie** - Release Manager
+- **Holo** - Holistic System Monitor
+- **Oloh** - Optimization Specialist
+
+Agent availability and collaboration mode depends on the current traffic light status.
+
+**See [AGENTS.md](AGENTS.md) for detailed agent documentation and collaboration workflows.**
+
+## Quick Links
+
+### 🌟 Start Here
+- **[ECOSYSTEM.md](ECOSYSTEM.md)** - **Complete BlackRoad Ecosystem integration overview**
+
+### 🚦 Traffic Light System
+- **[GREENLIGHT.md](GREENLIGHT.md)** - Full GreenLight status documentation
+- **[YELLOWLIGHT.md](YELLOWLIGHT.md)** - Full YellowLight status documentation
+- **[REDLIGHT.md](REDLIGHT.md)** - Full RedLight status documentation
+- **[Traffic Light Script](blackroad-traffic-light.sh)** - Status management tool
+
+### 🤖 AI Agents & Integration
+- **[AGENTS.md](AGENTS.md)** - Complete agent documentation and workflows
+- **[BLACKROAD-CODEX.md](BLACKROAD-CODEX.md)** - Code intelligence integration
+
+### 📚 Core Documentation
+- **[problems.md](problems.md)** - Ten unsolved mathematical problems
+- **[README.md](README.md)** - This file
+- **[LICENSE](LICENSE)** - Project license
 
 ## Disclaimer
 
