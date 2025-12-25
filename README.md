@@ -3,6 +3,11 @@
 > This is an experimental/research repository. Code here is exploratory and not production-ready.
 > For production systems, see [BlackRoad-OS](https://github.com/BlackRoad-OS).
 
+> 🌟 **BlackRoad Ecosystem Integration**
+>
+> This repository is fully integrated with the BlackRoad Ecosystem including Traffic Light System, 
+> BlackRoad Codex, and 12 AI Agents. See [ECOSYSTEM.md](ECOSYSTEM.md) for complete details.
+
 ## 🚦 Traffic Light Status
 
 **Current Status:** 🟢 **GREENLIGHT** - Ready for development and collaboration
@@ -187,6 +192,28 @@ This repository supports collaboration with BlackRoad AI agents:
 - **Oloh** - Optimization Specialist
 
 Agent availability and collaboration mode depends on the current traffic light status.
+
+**See [AGENTS.md](AGENTS.md) for detailed agent documentation and collaboration workflows.**
+
+## Quick Links
+
+### 🌟 Start Here
+- **[ECOSYSTEM.md](ECOSYSTEM.md)** - **Complete BlackRoad Ecosystem integration overview**
+
+### 🚦 Traffic Light System
+- **[GREENLIGHT.md](GREENLIGHT.md)** - Full GreenLight status documentation
+- **[YELLOWLIGHT.md](YELLOWLIGHT.md)** - Full YellowLight status documentation
+- **[REDLIGHT.md](REDLIGHT.md)** - Full RedLight status documentation
+- **[Traffic Light Script](blackroad-traffic-light.sh)** - Status management tool
+
+### 🤖 AI Agents & Integration
+- **[AGENTS.md](AGENTS.md)** - Complete agent documentation and workflows
+- **[BLACKROAD-CODEX.md](BLACKROAD-CODEX.md)** - Code intelligence integration
+
+### 📚 Core Documentation
+- **[problems.md](problems.md)** - Ten unsolved mathematical problems
+- **[README.md](README.md)** - This file
+- **[LICENSE](LICENSE)** - Project license
 
 ## Disclaimer
 
