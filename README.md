@@ -1,5 +1,10 @@
 # Native AI Quantum Energy Lab
 
+[![CI](https://github.com/BlackRoad-OS/native-ai-quantum-energy/actions/workflows/ci.yml/badge.svg)](https://github.com/BlackRoad-OS/native-ai-quantum-energy/actions/workflows/ci.yml)
+![Python 3.10 | 3.11 | 3.12](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
+
+> **Proprietary** -- Copyright (c) 2025 BlackRoad OS, Inc. All rights reserved. See [LICENSE](LICENSE).
+
 Quantum circuit simulator, energy/particle simulations, and explorations of unsolved mathematical problems. Pure Python — no external dependencies.
 
 ## Modules
